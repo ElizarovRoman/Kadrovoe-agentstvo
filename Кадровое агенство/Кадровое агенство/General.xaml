@@ -1,0 +1,14 @@
+﻿<Window x:Class="Кадровое_агенство.General"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Кадровое_агенство"
+        mc:Ignorable="d"
+        Title="General" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="toREG" Content="Зарегистрироваться" HorizontalAlignment="Left"  Margin="140,211,0,0" VerticalAlignment="Top" Width="457" FontSize="48" Foreground="Black" Background="#FFD3ECF0" Click="ToREG_Click"/>
+        <Button x:Name="toentry" HorizontalAlignment="Left" VerticalAlignment="Top" Width="151" Click="Button_Click" FontSize="48" Foreground="Black" Background="#FFD3ECF0" Margin="309,95,0,0" Height="68" Content="Войти"/>
+
+    </Grid>
+</Window>

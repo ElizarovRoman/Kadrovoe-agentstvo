@@ -1,0 +1,52 @@
+﻿<Window x:Class="Кадровое_агенство.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Кадровое_агенство"
+        mc:Ignorable="d"
+        Title="Кадровое агенство" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,27,0,0">
+        <TabControl HorizontalAlignment="Left" Height="392" VerticalAlignment="Top" Width="792">
+            <TabItem Header="Учет и классификация данных о безработных" Margin="-2,-2,-187,0">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="grid1" HorizontalAlignment="Left" Height="364" VerticalAlignment="Top" Width="786">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="ФИО"/>
+                            <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Год рождения"/>
+                            <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Паспортные данные"/>
+                            <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Дата постановки на учет"/>
+                            <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Работает или нет"/>
+                        </DataGrid.Columns>
+                        <DataGrid.Items>
+
+                        </DataGrid.Items>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Свободные вакансии" Margin="187,-2,-329,0">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid HorizontalAlignment="Left" Height="364" VerticalAlignment="Top" Width="786">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Название предприятия"/>
+                            <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="График работы"/>
+                            <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Должность"/>
+                            <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Адрес работы"/>
+                            <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Зарплата"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Menu HorizontalAlignment="Left" Height="26" Margin="0,-26,0,0" VerticalAlignment="Top" Width="106">
+            <MenuItem Header="Личный кабинет" Height="26" Width="139">
+                <MenuItem/>
+                <MenuItem/>
+                <Button x:Name="toreg" Content="Регистрация нового пользователя" Width="196" Click="Toreg_Click_1"/>
+                <Button x:Name="togen" Content="Выйти" Click="Togen_Click"/>
+            </MenuItem>
+        </Menu>
+
+    </Grid>
+
+</Window>
